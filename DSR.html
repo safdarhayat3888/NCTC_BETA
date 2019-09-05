@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NCTC Portal | Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>NCTC Portal</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="list-group">
+                      <a href="dashboard.html" class="list-group-item list-group-item-action">
+                          Home
+                      </a>
+                        <a href="dsr.html" class="list-group-item list-group-item-action active">
+                            DSR
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            IOT
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            ATTENDANCE
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            ASSESMENT
+                        </a>
+                        <a href="index.html" class="list-group-item list-group-item-action">
+                            LOGOUT
+                          </a>
+
+                    </ul>
+                </div>
+                <div class="col-md-10 right-panel">
+                    <ul class="nav nav-tabs nav-pills" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#upload" role="tab">
+                                Upload DSR
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#view" role="tab">View DSR
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="upload">
+                            <form action="" class="form-upload-dsr">
+                                <table class="table table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Sl.No.</th>
+                                            <th scope="col">Topic</th>
+                                            <th scope="col">Learned</th>
+                                            <th scope="col">Assigned By</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Hours</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <input type="search" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="search" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="search" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="search" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="view">
+                            <div class="row">
+                                <form action="" class="form-inline form-search">
+                                    <input type="date" name="selectDate" class="form-control mr-3">
+                                    <button type="submit" class="btn btn-dark">Search</button>
+                                </form>
+                            </div>
+
+                            <table class="table table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Sl.No.</th>
+                                        <th scope="col">Topic</th>
+                                        <th scope="col">Learned</th>
+                                        <th scope="col">Assigned By</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Hyper-V</td>
+                                        <td>IIS, DNS</td>
+                                        <td>Avinash Sir</td>
+                                        <td>Completed</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Windows Server Administration</td>
+                                        <td>Architecture</td>
+                                        <td>Avinash Sir</td>
+                                        <td>Completed</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br>
+
+                            <table class="table table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Sl.No.</th>
+                                        <th scope="col">Topic</th>
+                                        <th scope="col">Learned</th>
+                                        <th scope="col">Assigned By</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
